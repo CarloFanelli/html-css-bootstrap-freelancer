@@ -9,14 +9,14 @@
 }
 
 header{
-    background-color: ;
+    background-color:var(--bs-primary);
 }
 
 img{
     max-width: 100%;
 }
 
-.start.container-fluid {
+.start {
     background: var(--bs-secondary);
     color: white;
 
@@ -50,4 +50,41 @@ img{
     & img{
         border-radius: 20px;
     }
+}
+
+.about{
+    background: var(--bs-secondary);
+    color: white;
+
+    .space{
+        border: 1px solid white;
+        height: 0px;
+    }  
+    
+    & h2{
+        text-transform: uppercase;
+    }
+
+    [class*="col-"]{
+        text-align: left;
+    }
+
+    .btn{
+        gap: 0.5rem;
+    }
+}
+
+.contact{
+    background: var(--bs-secondary);
+    color: white;
+
+    .space{
+        border: 1px solid white;
+        height: 0px;
+    }  
+    
+    & h2{
+        text-transform: uppercase;
+    }
+
 }
