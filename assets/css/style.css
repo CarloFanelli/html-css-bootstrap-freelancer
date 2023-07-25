@@ -75,16 +75,19 @@ img{
 }
 
 .contact{
-    background: var(--bs-secondary);
-    color: white;
 
     .space{
-        border: 1px solid white;
+        border: 1px solid;
         height: 0px;
     }  
     
     & h2{
         text-transform: uppercase;
+    }
+
+    .space-debug{
+        height: 20rem;
+        background-color: purple;
     }
 
 }
