@@ -91,3 +91,37 @@ img{
     }
 
 }
+
+.footer-top{
+    background-color: var(--bs-primary-light);
+    color: white;
+
+    & h5{
+        text-transform:uppercase;
+    }
+
+    [class*="col-"]{
+        text-align: center;
+    }
+
+    .icon{
+        border: 1px solid white;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+
+    & i{
+        line-height: 2rem;
+    }
+
+    & a{
+        color: var(--bs-secondary);
+        text-decoration: none;
+    }
+}
+
+.footer-bottom{
+    background-color: var(--bs-primary);
+    color: white;
+}
