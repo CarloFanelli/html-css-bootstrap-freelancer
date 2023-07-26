@@ -1,40 +1,42 @@
-*{
+* {
     font-family: system-ui, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-:root{
+:root {
     --bs-primary: #2c3e50;
     --bs-secondary: #1bbc9d;
     --bs-primary-light: #3b546c;
 }
 
-.my_nav{
+.my_nav {
     background-color: var(--bs-primary);
-    
-    .navbar-brand{
+
+    .navbar-brand {
         color: white;
         font-weight: 600;
         font-size: 1.5rem;
     }
-    .nav-link{
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
+
+    .nav-link {
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
     }
-    .navbar-toggler-icon{
+
+    .navbar-toggler-icon {
         filter: invert(1);
     }
 }
 
-header{
-    background-color:var(--bs-primary);
+header {
+    background-color: var(--bs-primary);
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.space{
+.space {
     border: 1px solid;
     height: 0px;
 }
@@ -42,78 +44,79 @@ img{
 .start {
     background: var(--bs-secondary);
 
-    .space{
+    .space {
         border-color: white;
         height: 0px;
     }
 
-    @media screen and (max-width:497px){
-     
-        .other{
+    @media screen and (max-width:497px) {
+
+        .other {
             font-size: 0.9rem;
         }
     }
 }
 
-.portfolio{
+.portfolio {
 
-    .space{
+    .space {
         border-color: var(--bs-primary);
         height: 0px;
     }
 }
 
-.about{
-    background: var(--bs-secondary);    
+.about {
+    background: var(--bs-secondary);
 
-    [class*="col-"]{
+    [class*="col-"] {
         text-align: left;
     }
 
-    .btn{
+    .btn {
         gap: 0.5rem;
     }
 }
 
-.contact{
+.contact {
 
-    .space-debug{
+    .space-debug {
         height: 20rem;
         background-color: purple;
     }
 
-    .btn{
+    .btn {
         background-color: var(--bs-secondary);
     }
 
     ::placeholder {
         color: var(--bs-primary);
+        padding-bottom: 10rem;
     }
 }
 
-.footer_top{
+.footer_top {
     background-color: var(--bs-primary-light);
     color: white;
 
-    [class*="col-"]{
+    [class*="col-"] {
         text-align: center;
     }
 
-    .icon{
+    .icon {
         border: 1px solid white;
         width: 2rem;
         height: 2rem;
     }
 
-    & i{
+    & i {
         line-height: 2rem;
     }
 
-    & a{
+    & a {
         color: var(--bs-secondary);
     }
 }
 
-.footer_bottom{
+.footer_bottom {
     background-color: var(--bs-primary);
 }
