@@ -8,7 +8,7 @@
     --bs-primary-light: #3b546c;
 }
 
-.my-nav{
+.my_nav{
     background-color: var(--bs-primary);
     
     .navbar-brand{
@@ -91,7 +91,7 @@ img{
     }
 }
 
-.footer-top{
+.footer_top{
     background-color: var(--bs-primary-light);
     color: white;
 
@@ -114,6 +114,6 @@ img{
     }
 }
 
-.footer-bottom{
+.footer_bottom{
     background-color: var(--bs-primary);
 }
