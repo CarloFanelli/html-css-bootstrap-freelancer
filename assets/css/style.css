@@ -84,13 +84,12 @@ img {
         background-color: purple;
     }
 
-    .btn {
+    .my_btn {
         background-color: var(--bs-secondary);
     }
 
     ::placeholder {
         color: var(--bs-primary);
-        padding-bottom: 10rem;
     }
 }
 
