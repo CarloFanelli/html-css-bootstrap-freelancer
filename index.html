@@ -24,12 +24,30 @@
       crossorigin="anonymous"></script>
 
     <header>
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-6 p-2">Start bootstrap</div>
-          <div class="col-6 p-2">navigations</div>
+      <nav class="navbar navbar-expand-sm my-nav">
+        <div class="container g-5">
+          <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+          <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
 
     </header>
 
@@ -65,15 +83,21 @@
               <i class="fa-solid fa-star col-1 text-center"></i>
               <div class="space col-2"></div>
             </div>
-            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 py-3">
-              <div class="col py-2"><img class="rounded-4" src="./assets/img/cabin.png"
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-3">
+              <div class="col py-2"><img class="rounded-4"
+                  src="./assets/img/cabin.png"
                   alt="cabin"></div>
-              <div class="col py-2"><img class="rounded-4" src="./assets/img/cake.png" alt="cake"></div>
-              <div class="col py-2"><img class="rounded-4" src="./assets/img/circus.png"
+              <div class="col py-2"><img class="rounded-4"
+                  src="./assets/img/cake.png" alt="cake"></div>
+              <div class="col py-2"><img class="rounded-4"
+                  src="./assets/img/circus.png"
                   alt="circus"></div>
-              <div class="col py-2"><img class="rounded-4" src="./assets/img/game.png" alt="game"></div>
-              <div class="col py-2"><img class="rounded-4" src="./assets/img/safe.png" alt="safe"></div>
-              <div class="col py-2"><img class="rounded-4" src="./assets/img/submarine.png"
+              <div class="col py-2"><img class="rounded-4"
+                  src="./assets/img/game.png" alt="game"></div>
+              <div class="col py-2"><img class="rounded-4"
+                  src="./assets/img/safe.png" alt="safe"></div>
+              <div class="col py-2"><img class="rounded-4"
+                  src="./assets/img/submarine.png"
                   alt="submarine"></div>
             </div>
           </div>
@@ -131,8 +155,41 @@
             <div class="row justify-content-center">
               <div class="col-12 col-lg-10 py-md-5 py-2">
 
-                <div class="space-debug"></div>
-                <!-- /.space-debug -->
+                <form class="row g-3 needs-validation flex-column" novalidate>
+                  <div class="col-12">
+                    <input type="text"
+                      class="form-control border-0 border-bottom" id="Name"
+                      placeholder="Name" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <input type="email"
+                      class="form-control border-0 border-bottom" id="email"
+                      placeholder="Email Adress" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <input type="number"
+                      class="form-control border-0 border-bottom" id="Phone"
+                      placeholder="Phone Number" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control border-0 border-bottom"
+                      id="exampleFormControlTextarea1" placeholder="Message"
+                      rows="5"></textarea>
+                  </div>
+
+                  <div class="col-1">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                  </div>
+                </form>
 
               </div>
 
@@ -148,30 +205,39 @@
       <div class="footer-top">
         <div class="container">
 
-        
-        <div class="row align-content-center py-4 pt-lg-5 pb-lg-2">
-          <div class="col-12 col-md-4">
-            <h5 class="text-uppercase">location</h5>
-            <p>2215 John Daniel Drive Clark, MO 54243</p>
-          </div>
-
-          <div class="col-12 col-md-4">
-            <h5 class="text-uppercase">Around the web</h5>
-            <div class="icons d-flex gap-2 gap-lg-4 justify-content-center py-2">
-              <div class="icon rounded-circle d-flex align-content-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></div>
-              <div class="icon rounded-circle d-flex align-content-center justify-content-center"><i class="fa-brands fa-google-plus-g"></i></div>
-              <div class="icon rounded-circle d-flex align-content-center justify-content-center"><i class="fa-brands fa-twitter"></i></div>
-              <div class="icon rounded-circle d-flex align-content-center justify-content-center"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="row align-content-center py-4 pt-lg-5 pb-lg-2">
+            <div class="col-12 col-md-4">
+              <h5 class="text-uppercase">location</h5>
+              <p>2215 John Daniel Drive Clark, MO 54243</p>
             </div>
-          </div>
 
-          <div class="col-12 col-md-4">
-            <h5 class="text-uppercase">About freelancer</h5>
-            <p>Freelance is a free to use, open source Bootstrap theme created by <a class="text-decoration-none" href="#">Start Bootstrap</a>.</p>
-          </div>
+            <div class="col-12 col-md-4">
+              <h5 class="text-uppercase">Around the web</h5>
+              <div
+                class="icons d-flex gap-2 gap-lg-4 justify-content-center py-2">
+                <div
+                  class="icon rounded-circle d-flex align-content-center justify-content-center"><i
+                    class="fa-brands fa-facebook-f"></i></div>
+                <div
+                  class="icon rounded-circle d-flex align-content-center justify-content-center"><i
+                    class="fa-brands fa-google-plus-g"></i></div>
+                <div
+                  class="icon rounded-circle d-flex align-content-center justify-content-center"><i
+                    class="fa-brands fa-twitter"></i></div>
+                <div
+                  class="icon rounded-circle d-flex align-content-center justify-content-center"><i
+                    class="fa-brands fa-linkedin-in"></i></div>
+              </div>
+            </div>
 
+            <div class="col-12 col-md-4">
+              <h5 class="text-uppercase">About freelancer</h5>
+              <p>Freelance is a free to use, open source Bootstrap theme created
+                by <a class="text-decoration-none" href="#">Start Bootstrap</a>.</p>
+            </div>
+
+          </div>
         </div>
-      </div>
       </div>
       <!-- /.footer-top -->
       <div class="footer-bottom text-white">

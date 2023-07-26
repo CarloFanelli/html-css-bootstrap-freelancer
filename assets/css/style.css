@@ -8,6 +8,24 @@
     --bs-primary-light: #3b546c;
 }
 
+.my-nav{
+    background-color: var(--bs-primary);
+    
+    .navbar-brand{
+        color: white;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .nav-link{
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    }
+    .navbar-toggler-icon{
+        filter: invert(1);
+    }
+}
+
 header{
     background-color:var(--bs-primary);
 }
@@ -57,6 +75,13 @@ img{
         background-color: purple;
     }
 
+    .btn{
+        background-color: var(--bs-secondary);
+    }
+
+    ::placeholder {
+        color: var(--bs-primary);
+    }
 }
 
 .footer-top{
