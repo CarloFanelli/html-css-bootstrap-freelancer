@@ -46,6 +46,13 @@ img{
         border-color: white;
         height: 0px;
     }
+
+    @media screen and (max-width:497px){
+     
+        .other{
+            font-size: 0.9rem;
+        }
+    }
 }
 
 .portfolio{
